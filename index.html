@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Search Directory</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header text-white p-3">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="/photos/almuni.png" alt="ULM Logo" class="logo-img">
+            </div>
+            <nav>
+                <a href="#" class="text-white mx-3">Home</a>
+                <a href="#" class="text-white mx-3">My Account</a>
+                <a href="#" class="text-white mx-3">Log In</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero bg-light py-5">
+        <div class="container text-center">
+            <h1 class="display-5">Find Your Alumni</h1>
+            <p class="lead">Search for alumni by name, industry, or graduation year</p>
+            <div class="search-bar d-flex justify-content-center mt-4">
+                <input class="form-control me-2 w-50" type="search" placeholder="Search Alumni" aria-label="Search">
+                <button class="btn btn-primary">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alumni Search Results Section (31 Cards without Photos) -->
+    <section class="results py-5">
+        <div class="container">
+            <h2 class="mb-4 text-center">Alumni Profiles</h2>
+            <div class="row">
+                <!-- Generate 31 Alumni Cards -->
+                <!-- Card Structure -->
+                <!-- Change the names, industries, and graduation years as necessary -->
+                <!-- Example: Card 1 -->
+                <div class="container mt-5" id="Profile.cards">
+                    <div class="row">
+                        <!-- Row 1 -->
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">John Doe</h5>
+                                    <p class="card-text">Software Engineer</p>
+                                    <p class="card-text">john.doe@email.com</p>
+                                    <p class="card-text">User ID: 101</p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal1">
+                                        View Profile
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Jane Smith</h5>
+                                    <p class="card-text">Marketing Lead</p>
+                                    <p class="card-text">jane.smith@email.com</p>
+                                    <p class="card-text">User ID: 102</p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal2">
+                                        View Profile
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mike Brown</h5>
+                                    <p class="card-text">Architect</p>
+                                    <p class="card-text">mike.brown@email.com</p>
+                                    <p class="card-text">User ID: 103</p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal3">
+                                        View Profile
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Modal 1 -->
+                    <div class="modal fade" id="profileModal1" tabindex="-1" aria-labelledby="profileModalLabel1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel1">John Doe</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>DoeTech Solutions</h6>
+                                    <p>Business Email: support@doetech.com</p>
+                                    <p>Business Phone: (123) 456-7890</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Custom software development and IT services located at 123 Elm St., Techville, TX, 75001.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Modal 2 -->
+                    <div class="modal fade" id="profileModal2" tabindex="-1" aria-labelledby="profileModalLabel2" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel2">Jane Smith</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Smith Marketing</h6>
+                                    <p>Business Email: marketing@smithmktg.com</p>
+                                    <p>Business Phone: (987) 654-3210</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Comprehensive marketing solutions located at 456 Oak Dr., Createtown, CA, 90210.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Modal 3 -->
+                    <div class="modal fade" id="profileModal3" tabindex="-1" aria-labelledby="profileModalLabel3" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel3">Mike Brown</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Brown Designs</h6>
+                                    <p>Business Email: info@browndesigns.com</p>
+                                    <p>Business Phone: (212) 555-1234</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Innovative architectural and design solutions located at 789 Pine Ave., Design City, NY, 10001.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row">
+                        <!-- Row 2 -->
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sarah Wilson</h5>
+                                    <p class="card-text">Consultant</p>
+                                    <p class="card-text">sarah.wilson@email.com</p>
+                                    <p class="card-text">User ID: 104</p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal4">
+                                        View Profile
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Profile 5 -->
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Robert Davis</h5>
+                                    <p class="card-text">CEO</p>
+                                    <p class="card-text">robert.davis@email.com</p>
+                                    <p class="card-text">User ID: 105</p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal5">
+                                        View Profile
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Emily Clark</h5>
+                                    <p class="card-text">HR Manager</p>
+                                    <p class="card-text">emily.clark@email.com</p>
+                                    <p class="card-text">User ID: 106</p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal6">
+                                        View Profile
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="modal fade" id="profileModal4" tabindex="-1" aria-labelledby="profileModalLabel4" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel4">Sarah Wilson</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Wilson Consulting</h6>
+                                    <p>Business Email: contact@wilsonconsult.com</p>
+                                    <p>Business Phone: (305) 555-5678</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Business consulting and strategy planning located at 321 Maple Blvd., Consultville, FL, 33101.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Modal 5 -->
+                    <div class="modal fade" id="profileModal5" tabindex="-1" aria-labelledby="profileModalLabel5" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel5">Robert Davis</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Davis Innovations</h6>
+                                    <p>Business Email: ceo@davisinnovations.com</p>
+                                    <p>Business Phone: (512) 555-3456</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Leading innovation in tech solutions located at 654 Cedar Ln., Innovation City, TX, 75002.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal fade" id="profileModal6" tabindex="-1" aria-labelledby="profileModalLabel6" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel6">Emily Clark</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Clark HR Services</h6>
+                                    <p>Business Email: hr@clarkhr.com</p>
+                                    <p>Business Phone: (312) 555-6789</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>HR consulting and recruitment located at 987 Birch Ct., People Town, IL, 60607.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Row 3-->
+
+                    <!-- Profile 7 -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Daniel Lee</h5>
+                                <p class="card-text">Data Analyst</p>
+                                <p class="card-text">daniel.lee@email.com</p>
+                                <p class="card-text">User ID: 107</p>
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal7">
+                                 View Profile
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Profile 8 -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Chloe Martinez</h5>
+                                <p class="card-text">Web Developer</p>
+                                <p class="card-text">chloe.martinez@email.com</p>
+                                <p class="card-text">User ID: 108</p>
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal8">
+                                    View Profile
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Profile 9 -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Oliver White</h5>
+                                <p class="card-text">Financial Advisor</p>
+                                <p class="card-text">oliver.white@email.com</p>
+                                <p class="card-text">User ID: 109</p>
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal9">
+                                    View Profile
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                                    
+
+                    <!-- Modal 7 -->
+                    <!-- Modal 7 -->
+                    <div class="modal fade" id="profileModal7" tabindex="-1" aria-labelledby="profileModalLabel7" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel7">Daniel Lee</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Lee Analytics</h6>
+                                    <p>Business Email: data@leeanalytics.com</p>
+                                    <p>Business Phone: (617) 555-1234</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Data analysis and business insights located at 246 Spruce Dr., Dataville, MA, 02108.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+
+                    <!-- Modal 8 -->
+                    <!-- Modal 8 -->
+                    <div class="modal fade" id="profileModal8" tabindex="-1" aria-labelledby="profileModalLabel8" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel8">Chloe Martinez</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Martinez Web Dev</h6>
+                                    <p>Business Email: web@martinezwebdev.com</p>
+                                    <p>Business Phone: (206) 555-9876</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Custom web development and maintenance located at 159 Elm St., Code City, WA, 98101.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal 9 -->
+                    <div class="modal fade" id="profileModal9" tabindex="-1" aria-labelledby="profileModalLabel9" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel9">Oliver White</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>White Finance</h6>
+                                    <p>Business Email: advisor@whitefinance.com</p>
+                                    <p>Business Phone: (908) 555-3456</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Financial planning and investment strategies located at 753 Poplar St., Moneyville, NJ, 07001.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Row 4-->
+
+                     <!-- Profile 10 -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Grace Thompson</h5>
+                                <p class="card-text">Legal Advisor</p>
+                                <p class="card-text">grace.thompson@email.com</p>
+                                <p class="card-text">User ID: 110</p>
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal10">
+                                    View Profile
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Profile 11 -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Ethan Garcia</h5>
+                                <p class="card-text">Event Planner</p>
+                                <p class="card-text">ethan.garcia@email.com</p>
+                                <p class="card-text">User ID: 111</p>
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal11">
+                                    View Profile
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Profile 12 -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Ava Harris</h5>
+                                <p class="card-text">Graphic Designer</p>
+                                <p class="card-text">ava.harris@email.com</p>
+                                <p class="card-text">User ID: 112</p>
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal12">
+                                    View Profile
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal 10 -->
+                    <div class="modal fade" id="profileModal10" tabindex="-1" aria-labelledby="profileModalLabel10" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel10">Grace Thompson</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Thompson Legal</h6>
+                                    <p>Business Email: legal@thompsonlegal.com</p>
+                                    <p>Business Phone: (213) 555-9012</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Corporate law and legal consultation located at 951 Walnut Ln., Law City, CA, 90211.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal 11 -->
+                    <div class="modal fade" id="profileModal11" tabindex="-1" aria-labelledby="profileModalLabel11" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel11">Ethan Garcia</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Garcia Events</h6>
+                                    <p>Business Email: events@garciaevents.com</p>
+                                    <p>Business Phone: (602) 555-5678</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Event planning and coordination services located at 357 Chestnut Dr., Party Town, AZ, 85001.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal 12 -->
+                    <div class="modal fade" id="profileModal12" tabindex="-1" aria-labelledby="profileModalLabel12" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel12">Ava Harris</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Harris Designs</h6>
+                                    <p>Business Email: design@harrisdesigns.com</p>
+                                    <p>Business Phone: (503) 555-7890</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Graphic design and creative branding located at 753 Cypress St., Creative City, OR, 97201.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--Row 5-->
+
+
+                    <!-- Profile 13 -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Liam Cooper</h5>
+                                <p class="card-text">Operations Lead</p>
+                                <p class="card-text">liam.cooper@email.com</p>
+                                <p class="card-text">User ID: 113</p>
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal13">
+                                    View Profile
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Profile 14 -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Mia Gonzalez</h5>
+                                <p class="card-text">Marketing Analyst</p>
+                                <p class="card-text">mia.gonzalez@email.com</p>
+                                <p class="card-text">User ID: 114</p>
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal14">
+                                    View Profile
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Profile 15 -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">William Nelson</h5>
+                                <p class="card-text">Cybersecurity Lead</p>
+                                <p class="card-text">william.nelson@email.com</p>
+                                <p class="card-text">User ID: 115</p>
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal15">
+                                    View Profile
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <!-- Modal 13 -->
+                    <div class="modal fade" id="profileModal13" tabindex="-1" aria-labelledby="profileModalLabel13" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel13">Liam Cooper</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Cooper Logistics</h6>
+                                    <p>Business Email: logistics@cooperlogistics.com</p>
+                                    <p>Business Phone: (214) 555-1234</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Logistics and supply chain management located at 123 Ash St., Delivery City, TX, 75003.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal 14 -->
+                    <div class="modal fade" id="profileModal14" tabindex="-1" aria-labelledby="profileModalLabel14" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel14">Mia Gonzalez</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Gonzalez Marketing</h6>
+                                    <p>Business Email: marketing@gonzalezmktg.com</p>
+                                    <p>Business Phone: (415) 555-5678</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Marketing research and campaign analytics located at 456 Beech St., Adville, CA, 90212.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal 15 -->
+                    <div class="modal fade" id="profileModal15" tabindex="-1" aria-labelledby="profileModalLabel15" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel15">William Nelson</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Nelson Security</h6>
+                                    <p>Business Email: support@nelsonsecurity.com</p>
+                                    <p>Business Phone: (917) 555-6789</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Cybersecurity solutions for businesses located at 789 Fir Ln., Secure Town, NY, 10002.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Row 6-->
+
+                    <div class="row">
+                        <!-- Profile 16 -->
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ella Scott</h5>
+                                    <p class="card-text">Interior Designer</p>
+                                    <p class="card-text">ella.scott@email.com</p>
+                                    <p class="card-text">User ID: 116</p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal16">
+                                        View Profile
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Profile 17 -->
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Jack Adams</h5>
+                                    <p class="card-text">Fitness Coach</p>
+                                    <p class="card-text">jack.adams@email.com</p>
+                                    <p class="card-text">User ID: 117</p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal17">
+                                        View Profile
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Profile 18 -->
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Olivia Martinez</h5>
+                                    <p class="card-text">Photographer</p>
+                                    <p class="card-text">olivia.martinez@email.com</p>
+                                    <p class="card-text">User ID: 118</p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal18">
+                                        View Profile
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                        <!-- Profile 19 -->
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lucas Perez</h5>
+                                    <p class="card-text">Software Developer</p>
+                                    <p class="card-text">lucas.perez@email.com</p>
+                                    <p class="card-text">User ID: 119</p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal19">
+                                        View Profile
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Profile 20 -->
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Charlotte Roberts</h5>
+                                    <p class="card-text">Event Coordinator</p>
+                                    <p class="card-text">charlotte.roberts@email.com</p>
+                                    <p class="card-text">User ID: 120</p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal20">
+                                        View Profile
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Profile 21 -->
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Henry Murphy</h5>
+                                    <p class="card-text">Accountant</p>
+                                    <p class="card-text">henry.murphy@email.com</p>
+                                    <p class="card-text">User ID: 121</p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal21">
+                                        View Profile
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Modals for Profiles 16 to 20 -->
+                    
+                  <!-- Modal 19 -->
+                    <div class="modal fade" id="profileModal19" tabindex="-1" aria-labelledby="profileModalLabel19" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel19">Lucas Perez</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Perez Devs</h6>
+                                    <p>Business Email: devs@perezdevs.com</p>
+                                    <p>Business Phone: (503) 555-1234</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Custom software development located at 123 Pine St., Code City, OR, 97202.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal 20 -->
+                    <div class="modal fade" id="profileModal20" tabindex="-1" aria-labelledby="profileModalLabel20" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel20">Charlotte Roberts</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Roberts Events</h6>
+                                    <p>Business Email: events@robertsevents.com</p>
+                                    <p>Business Phone: (214) 555-5678</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Event planning for corporate and personal events located at 456 Oak Dr., Event City, TX, 75005.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="profileModal21" tabindex="-1" aria-labelledby="profileModalLabel21" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel21">Henry Murphy</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Murphy Accounting</h6>
+                                    <p>Business Email: taxes@murphyacct.com</p>
+                                    <p>Business Phone: (646) 555-9012</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Accounting and tax preparation services located at 789 Maple Ave., Taxville, NY, 10003.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Profile 22 -->
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Amelia Turner</h5>
+                                    <p class="card-text">Lawyer</p>
+                                    <p class="card-text">amelia.turner@email.com</p>
+                                    <p class="card-text">User ID: 122</p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal22">
+                                        View Profile
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Profile 23 -->
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Benjamin Jenkins</h5>
+                                    <p class="card-text">Real Estate Agent</p>
+                                    <p class="card-text">benjamin.jenkins@email.com</p>
+                                    <p class="card-text">User ID: 123</p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal23">
+                                        View Profile
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Profile 24 -->
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sophia Bailey</h5>
+                                    <p class="card-text">Business Analyst</p>
+                                    <p class="card-text">sophia.bailey@email.com</p>
+                                    <p class="card-text">User ID: 124</p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal24">
+                                        View Profile
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="modal fade" id="profileModal22" tabindex="-1" aria-labelledby="profileModalLabel22" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel22">Amelia Turner</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Turner Law Firm</h6>
+                                    <p>Business Email: law@turnerlaw.com</p>
+                                    <p>Business Phone: (305) 555-2345</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Corporate and personal legal services located at 951 Cedar St., Legal City, FL, 33103.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Modal 23 -->
+                    <div class="modal fade" id="profileModal23" tabindex="-1" aria-labelledby="profileModalLabel23" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel23">Benjamin Jenkins</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Jenkins Realty</h6>
+                                    <p>Business Email: realty@jenkinsrealty.com</p>
+                                    <p>Business Phone: (817) 555-5678</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Real estate buying and selling services located at 753 Oak St., Property City, TX, 75006.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Modal 24 -->
+                    <div class="modal fade" id="profileModal24" tabindex="-1" aria-labelledby="profileModalLabel24" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel24">Sophia Bailey</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Bailey Consulting</h6>
+                                    <p>Business Email: consulting@bailey.com</p>
+                                    <p>Business Phone: (310) 555-6789</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Business consulting and process improvement located at 246 Elm Ln., Consultville, CA, 90214.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Profile 25 -->
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mason Miller</h5>
+                                    <p class="card-text">Videographer</p>
+                                    <p class="card-text">mason.miller@email.com</p>
+                                    <p class="card-text">User ID: 125</p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal25">
+                                        View Profile
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Profile 26 -->
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ella Campbell</h5>
+                                    <p class="card-text">Public Relations</p>
+                                    <p class="card-text">ella.campbell@email.com</p>
+                                    <p class="card-text">User ID: 126</p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal26">
+                                        View Profile
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Profile 27 -->
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Logan Parker</h5>
+                                    <p class="card-text">Sales Manager</p>
+                                    <p class="card-text">logan.parker@email.com</p>
+                                    <p class="card-text">User ID: 127</p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal27">
+                                        View Profile
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal 25 -->
+                    <div class="modal fade" id="profileModal25" tabindex="-1" aria-labelledby="profileModalLabel25" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel25">Mason Miller</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Miller Media</h6>
+                                    <p>Business Email: media@millermedia.com</p>
+                                    <p>Business Phone: (206) 555-1234</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Videography and media production services located at 159 Birch St., Media Town, WA, 98102.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal 26 -->
+                    <div class="modal fade" id="profileModal26" tabindex="-1" aria-labelledby="profileModalLabel26" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel26">Ella Campbell</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Campbell PR</h6>
+                                    <p>Business Email: pr@campbellpr.com</p>
+                                    <p>Business Phone: (817) 555-7890</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Public relations and communication services located at 753 Pine Ln., PR City, TX, 75007.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal 27 -->
+                    <div class="modal fade" id="profileModal27" tabindex="-1" aria-labelledby="profileModalLabel27" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel27">Logan Parker</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Parker Sales</h6>
+                                    <p>Business Email: sales@parkersales.com</p>
+                                    <p>Business Phone: (503) 555-3456</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Sales management and consulting services located at 321 Cedar Ave., Sales Town, OR, 97203.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                         <!-- Profile 28 -->
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lily Sanders</h5>
+                                    <p class="card-text">Social Media Manager</p>
+                                    <p class="card-text">lily.sanders@email.com</p>
+                                    <p class="card-text">User ID: 128</p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal28">
+                                        View Profile
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Profile 29 -->
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">James Cox</h5>
+                                    <p class="card-text">Business Consultant</p>
+                                    <p class="card-text">james.cox@email.com</p>
+                                    <p class="card-text">User ID: 129</p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal29">
+                                        View Profile
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Profile 30 -->
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Harper Bell</h5>
+                                    <p class="card-text">Fitness Trainer</p>
+                                    <p class="card-text">harper.bell@email.com</p>
+                                    <p class="card-text">User ID: 130</p>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#profileModal30">
+                                        View Profile
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Modal 28 -->
+                    <div class="modal fade" id="profileModal28" tabindex="-1" aria-labelledby="profileModalLabel28" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel28">Lily Sanders</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Sanders Media</h6>
+                                    <p>Business Email: media@sandersmedia.com</p>
+                                    <p>Business Phone: (214) 555-1234</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Social media marketing and management services located at 654 Oak Dr., Social Town, TX, 75008.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal 29 -->
+                    <div class="modal fade" id="profileModal29" tabindex="-1" aria-labelledby="profileModalLabel29" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel29">James Cox</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Cox Consulting</h6>
+                                    <p>Business Email: biz@coxconsulting.com</p>
+                                    <p>Business Phone: (305) 555-5678</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Business consulting and growth strategies located at 987 Cedar Ln., Businessville, FL, 33104.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal 30 -->
+                    <div class="modal fade" id="profileModal30" tabindex="-1" aria-labelledby="profileModalLabel30" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="profileModalLabel30">Harper Bell</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Bell Fitness</h6>
+                                    <p>Business Email: trainer@bellfitness.com</p>
+                                    <p>Business Phone: (646) 555-7890</p>
+                                    <p><strong>Description:</strong></p>
+                                    <p>Personal fitness training and health coaching located at 753 Oak St., Fitville, NY, 10004.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer Section-->
+    <footer class="footer bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 ULM Alumni Directory | <a href="#" class="text-white">Privacy Policy</a> | <a href="#"
+                    class="text-white">Terms of Service</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
