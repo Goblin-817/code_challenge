@@ -1,0 +1,66 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo styling */
+.logo-img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Header */
+.header {
+    background-color: #470f04; /* Dark background */
+}
+
+/* Hero section */
+.hero {
+    background-color: #e9ecef; /* Light grey background */
+    text-align: center;
+}
+
+.search-bar input {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.search-bar button {
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+/* Search results section */
+.results {
+    background-color: #fff;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: white;
+}
+
+.footer a {
+    color: #ffc107; /* Light gold color */
+}
+
+.card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.card-body {
+    text-align: center; /* Center-align text inside the card */
+}
+
+.profile-card {
+    display: block; /* Ensure the cards are displayed initially */
+}
