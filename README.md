@@ -29,7 +29,7 @@ How to Run
 Clone this repository:
 Copy code
 
-    git clone https://github.com/your-username/your-repo-name.git
+    git clone https://github.com/Goblin-817/code_challenge.git
 	
 Open the main.HTML file in your preferred browser to view the page.
 
