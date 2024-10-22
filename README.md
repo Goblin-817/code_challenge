@@ -20,7 +20,9 @@ main.css: This file styles the page, using custom CSS to adjust the layout, colo
 Technologies Used
 
 HTML5: To structure the web page and content.
+
 CSS3: For styling, including responsiveness and hover effects.
+
 Bootstrap 5: To enhance design with pre-built components and make the site responsive.
 
 
